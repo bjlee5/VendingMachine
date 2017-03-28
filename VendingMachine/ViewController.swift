@@ -12,7 +12,7 @@ fileprivate let reuseIdentifier = "vendingItem"
 fileprivate let screenWidth = UIScreen.main.bounds.width
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
+     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var balanceLabel: UILabel!
@@ -20,7 +20,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var quantityStepper: UIStepper!
     
-    let vendingMachine: VendingMachine
+    let vendingMachine: VendingMachine 
     var currentSelection: VendingSelection?
     
     required init?(coder aDecoder: NSCoder) {
